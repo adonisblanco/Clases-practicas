@@ -1,0 +1,20 @@
+public class Random
+{
+  private static void Main(string[] args)
+  {
+    Console.Write("Introduzca el número deseado: ");
+    int n = int.Parse(Console.ReadLine()!);
+    for(int k = 2; k < n; k++)
+    {
+     if(n % k == 0)
+     {
+      Console.WriteLine("no es primo");
+      return;
+     }
+    }
+    Console.WriteLine("Es primo");
+   
+  }
+
+
+}
