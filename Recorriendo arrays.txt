@@ -1,0 +1,28 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
+using System.Diagnostics;
+using System.Dynamic;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Principal;
+public class Random
+{
+
+  public static void Main(string[] args)
+  {
+     Console.Write("Diga la cantidad de elementos del array: ");
+    int b = int.Parse(Console.ReadLine()!);
+    Console.WriteLine("Introduzca una array: ");
+    int[] a = new int[b];
+    for (int i = 0; i < a.Length; i++)
+    {
+      a[i] = int.Parse(Console.ReadLine()!);
+    }
+    int menor = a.Min();
+    int mayor = a.Max();
+    double promedio = a.Average();
+    Console.WriteLine("El menor del array es: " + menor);
+    Console.WriteLine("El mayor del array es: " + mayor);
+    Console.WriteLine("El promedio del array es: " + promedio);
+  }
+}
